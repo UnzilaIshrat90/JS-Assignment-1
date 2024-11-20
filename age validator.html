@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Age Validator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+         font-family: Arial, sans-serif;
+}
+
+.validator {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+    </style>
+    <script>
+        function checkAge() {
+    const age = parseInt(document.getElementById('age').value);
+
+    if (isNaN(age) || age < 0) {
+        document.getElementById('result').innerText = "Invalid age";
+    } else if (age < 18) {
+        document.getElementById('result').innerText = "You are a minor";
+    } else {
+        document.getElementById('result').innerText = "You are an adult";
+    }
+}
+
+    </script>
+</head>
+<body>
+    <h1>Age Validator</h1>
+    <div class="validator">
+        <input type="number" id="age" placeholder="Enter your age">
+        <button onclick="checkAge()">Validate</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

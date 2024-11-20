@@ -1,0 +1,46 @@
+<html><head><style>h1 {
+    font-size: medium;
+    text-align: center;
+}
+
+p1 {
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    color: thistle;
+    text-align: justify;
+}
+
+p2 {
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: indianred;
+    text-align: justify;
+
+}
+
+
+
+p3 {
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightcoral;
+    text-align: justify;
+}
+
+</style></head><body>
+
+
+
+
+
+
+
+
+<h1 class="h1" >This is The First Assignment of CSS.</h1>
+
+<p class="p1" >This Assignment contain different font sizes</p>
+
+<p class="p2" >This Assignment have different Font font family,
+with different Text text-align </p>
+
+<p class="p3" >Also All three paragraphs have differenr Colors.</p>

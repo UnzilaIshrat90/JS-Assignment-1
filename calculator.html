@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <title>Simple Calculator</title>
+
+
+    <style>
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+
+        #result {
+            font-size: 17px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .calculator {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input {
+            padding: 5px 11px;
+            width: 90%;
+            margin-top: 5px;
+        }
+
+
+
+
+        button {
+            padding: 8px 19px;
+        }
+
+        textarea {
+            resize: none;
+            width: 97%;
+            max-width: 97%;
+            height: 100px;
+            max-height: 100px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <h1>Simple Calculator</h1>
+    <div class="calculator">
+        <label for="">Number One: </label>
+        <input type="number" id="num1" placeholder="Number 1">
+        <br><br>
+        <label for="">Number Two: </label>
+
+        <input type="number" id="num2" placeholder="Number 2">
+        <br><br>
+        <button onclick="addNumbers()">Add</button>
+        <textarea name="" id="result" placeholder="Your Result Will Be Shown here"></textarea>
+    </div>
+
+
+    <script>
+        function addNumbers() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            const result = num1 + num2;
+            document.getElementById('result').innerText = result;
+        }
+    </script>
+</body>
+
+</html>
